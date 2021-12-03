@@ -59,9 +59,9 @@
             var form = document.getElementById('adduser');
             var check = form.checkValidity();
             if (check === true) {
-                $scope.incharge.employeeId = ($scope.incharge.employeeId).toUpperCase();
-                $scope.incharge.name = ($scope.incharge.name).toUpperCase();
-                $scope.incharge.email = ($scope.incharge.email).toLowerCase();
+                // $scope.incharge.employeeId = ($scope.incharge.employeeId).toUpperCase();
+                // $scope.incharge.name = ($scope.incharge.name).toUpperCase();
+                // $scope.incharge.email = ($scope.incharge.email).toLowerCase();
                 userServices.adduser($scope.incharge, function (err, res) {
                     if (!err) {
                         $("html").stop().animate({ scrollTop: 0 }, 200);

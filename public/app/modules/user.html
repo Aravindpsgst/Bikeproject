@@ -65,21 +65,21 @@
                     </thead>
                     <tbody>
                         <tr ng-repeat="user in users | filter:page.searchBox | startFrom: page.currentPage*page.pageSize | limitTo:page.pageSize">
-                            <td data-title="Name">{{user.name}}</td>
-                            <td data-title="Modal">{{user.modal}}</td>
-                            <td data-title="Makes">{{user.makes}}</td>
-                            <td data-title="Sub-Modal">{{user.submodal}}</td>
-                            <td data-title="Price">{{user.price}}</td>
+                            <td data-title="name">{{user.name}}</td>
+                            <td data-title="modal">{{user.modal}}</td>
+                            <td data-title="makes">{{user.makes}}</td>
+                            <td data-title="sub-Modal">{{user.submodal}}</td>
+                            <td data-title="price">{{user.price}}</td>
                             <td data-title="power">{{user.power}}</td>
-                            <td data-title="Top-Speed">{{user.topspeed}}</td>
-                            <td data-title="Milege">{{user.milege}}</td>
-                            <td data-title="Torque">{{user.torque}}</td>
+                            <td data-title="topspeed">{{user.topspeed}}</td>
+                            <td data-title="milege">{{user.milege}}</td>
+                            <td data-title="torque">{{user.torque}}</td>
                             <td data-title="weigth">{{user.weight}}</td>
                             <td data-title="Action" class="action-btn px-0">
                                 <a class="btn btn-primary-2 rounded-0 py-0" href="javascript:void(0)">
                                     <i class="fas fa-edit mr-1"></i> Edit
                                 </a>
-                                <a class="btn btn-danger rounded-0 py-0" href="javascript:void(0)">
+                                <a class="btn btn-danger rounded-0 py-0" href="javascript:void(0)" ng-click="">
                                     <i class="fas fa-trash-alt mr-1"></i> Delete
                                 </a>
                             </td>
@@ -170,7 +170,7 @@
                     <div class="row">
                         <div class="form-group col-sm-6 mb-2">
                             <label>Price</label>
-                            <input class="form-control" type="nember" ng-model="incharge.Price" required>
+                            <input class="form-control" type="nember" ng-model="incharge.price" required>
                             <div class="invalid-feedback">
                                 please enter Price
                             </div>
